@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Prova.WebUI.ViewModels.ClienteViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Clientes</h1>
+
+<p>
+    <a asp-action="Create">Novo Cliente</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom_cliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dt_cadastramento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Des_observacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fl_ativo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom_cliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dt_cadastramento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Des_observacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fl_ativo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

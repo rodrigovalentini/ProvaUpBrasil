@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Prova.WebUI.ViewModels
 {
@@ -44,6 +45,8 @@ namespace Prova.WebUI.ViewModels
         public Guid Cod_tipo_item { get; set; }
 
         public virtual GrupoItemViewModel GrupoItem { get; set; }
+
+        [NotMapped]
         public virtual TipoItemViewModel TipoItem { get; set; }
 
         public virtual IEnumerable<VendaItemViewModel> VendaItens { get; set; }

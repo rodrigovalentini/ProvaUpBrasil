@@ -1,0 +1,41 @@
+﻿@model Prova.WebUI.ViewModels.UfViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Editar</h1>
+
+<h4>Unidade Federativa</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Nom_uf" class="control-label"></label>
+                <input asp-for="Nom_uf" class="form-control" />
+                <span asp-validation-for="Nom_uf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sgl_uf" class="control-label"></label>
+                <input asp-for="Sgl_uf" class="form-control" />
+                <span asp-validation-for="Sgl_uf" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar para lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

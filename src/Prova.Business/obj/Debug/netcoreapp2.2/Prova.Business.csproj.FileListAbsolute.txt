@@ -9,7 +9,6 @@ D:\Prova\src\Prova.Business\obj\Debug\netcoreapp2.2\Prova.Business.csprojAssembl
 D:\ProvaUpBrasil\src\Prova.Business\bin\Debug\netcoreapp2.2\Prova.Business.deps.json
 D:\ProvaUpBrasil\src\Prova.Business\bin\Debug\netcoreapp2.2\Prova.Business.dll
 D:\ProvaUpBrasil\src\Prova.Business\bin\Debug\netcoreapp2.2\Prova.Business.pdb
-D:\ProvaUpBrasil\src\Prova.Business\obj\Debug\netcoreapp2.2\Prova.Business.csprojAssemblyReference.cache
 D:\ProvaUpBrasil\src\Prova.Business\obj\Debug\netcoreapp2.2\Prova.Business.AssemblyInfoInputs.cache
 D:\ProvaUpBrasil\src\Prova.Business\obj\Debug\netcoreapp2.2\Prova.Business.AssemblyInfo.cs
 D:\ProvaUpBrasil\src\Prova.Business\obj\Debug\netcoreapp2.2\Prova.Business.dll

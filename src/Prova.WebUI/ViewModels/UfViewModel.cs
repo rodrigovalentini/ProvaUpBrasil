@@ -23,6 +23,5 @@ namespace Prova.WebUI.ViewModels
 
         [HiddenInput]
         public bool Fl_ativo { get; set; }
-        public virtual IEnumerable<CidadeViewModel> Cidades { get; set; }
     }
 }
